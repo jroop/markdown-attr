@@ -1,7 +1,9 @@
 # markdown-attr
-A simple parser to allow addition of HTML attributes when writing markdown. Useful if one wants to include some more specific styling to Markdown. An example would be to float an image to the right or put a class name for a specific code black. 
+Useful if one wants to include some more specific styling to Markdown. Pass in a Markdown string that has been converted to HTML and run this parser. An example would be to float an image to the right or put a class name for a specific code black. 
 
-##Tags Supported
+Pairs well with [marked](https://www.npmjs.com/package/marked). But should be able to take any markdown to html ouput and add attributes.
+
+#Tags Supported
 Currently only a few html tags are supported:
 ```html
 <a>
@@ -9,8 +11,10 @@ Currently only a few html tags are supported:
 <li>
 <code>
 ```
+#Install
+`npm install markdown-attr`
 
-##Usage
+#Usage
 Usage in the browser:
 ```html
 <script src="/path/to/markdown-attr.js"></script>
@@ -20,29 +24,33 @@ Usage for Node.js:
 var markdown_attr = requires('markdown_attr');
 ```
 
-Call function on Markdown string asynchronously:
+Eamples using `marked` and `markdown-attr`:
+Call function asynchronously:
 ```javascript
 var c = '`code`{style="background:LightBlue"}';
+var content = '';
 
-markdown_attr.parse(c,function(err,content){
-  c = content;
+marked(e.value, function(e,c){
+  markdown_attr.parse(c,function(e,c){
+    content = c;
+  });
 });
 ```
 Call function synchronously:
 ```javascript
 var c = '`code`{style="background:LightBlue"}';
 var content = '';
-content = markdown_attr.parse(c);
+content = marked(markdown_attr.parse(c));
 ```
 
 
-##Example Result
+#Example Result
 When writing Markdown a special `{` and `}` are used to capture the attribute input. 
 * Classes can use the `.cls-name` format.
 * Ids can use the `#id-name` format. 
 * Other Attributes can use `attr="value"` format.
 
-Writing:
+Passing markdown `marked` and `markdown-attr`:
 ```
 `Error`{style="background:red".cls-Error.cls-ErrorBad#id-Error}
 ```
