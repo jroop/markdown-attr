@@ -1,6 +1,6 @@
 {
   "name": "markdown-attr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple parser to allow addition of HTML attributes when writting markdown",
   "main": "markdown-attr.js",
   "scripts": {
