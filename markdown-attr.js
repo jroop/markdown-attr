@@ -3,11 +3,6 @@
 (function(exports){
   /*
    * Takes in marked up language or html and adds attributes to html
-   * Usage:
-   *    `block`{style="background:red".class-name.class-name2#id-name}
-   * Becomes:
-   *    <code id="id-name" class="class-name class-name2" style="background:red">block</code>
-   * 
    */
   var parse = function(s,callback){
     
