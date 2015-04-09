@@ -1,0 +1,26 @@
+{
+  "name": "markdown-attr",
+  "version": "0.0.0",
+  "description": "A simple parser to allow addition of HTML attributes when writting markdown",
+  "main": "markdown-attr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jroop/markdown-attr.git"
+  },
+  "keywords": [
+    "markdown",
+    "attribute",
+    "html",
+    "attr",
+    "parse"
+  ],
+  "author": "Joe Roop <joe.roop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jroop/markdown-attr/issues"
+  },
+  "homepage": "https://github.com/jroop/markdown-attr"
+}
