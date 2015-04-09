@@ -1,7 +1,7 @@
 # markdown-attr
 Useful if one wants to include some more specific styling to Markdown. Pass in a Markdown string that has been converted to HTML and run this parser. An example would be to float an image to the right or put a class name for a specific code black. 
 
-Pairs well with [marked](https://www.npmjs.com/package/marked). But should be able to take any Markdown to HTML ouput and add attributes.
+This is not a Markdown parser it was designed to pair with one. It does pair well with [marked](https://www.npmjs.com/package/marked). But should be able to take any Markdown to HTML ouput and add attributes.
 
 #Tags Supported
 Currently only a few html tags are supported:

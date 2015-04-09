@@ -1,7 +1,7 @@
 {
   "name": "markdown-attr",
   "version": "0.0.2",
-  "description": "A simple parser to allow addition of HTML attributes when writting markdown",
+  "description": "A simple parser to allow the addition of HTML attributes when writting Markdown",
   "main": "markdown-attr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
